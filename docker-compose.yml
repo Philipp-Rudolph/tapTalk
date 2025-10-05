@@ -1,0 +1,9 @@
+services:
+  taptalk:
+    build: .
+    container_name: taptalk
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
